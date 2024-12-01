@@ -83,8 +83,6 @@ Module.register("MMM-AirPollution", {
     this.nh3 = null     // Сoncentration of NH3 (Ammonia), μg/m3
     this.dt = null      // Date and time, Unix, UTC
 
-    // set timeout for next random text
-    setInterval(() => this.addRandomText(), 3000)
   },
 
   /**
