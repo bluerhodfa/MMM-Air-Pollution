@@ -85,6 +85,19 @@ Module.register("MMM-AirPollution", {
 
   },
 
+  // add information
+  addPollutionData: function(wrapper) {
+
+    var small = document.createElement("div");
+    small.className = "normal medium";
+
+    var carbonDioxide = document.createElement("span");
+    carbonDioxide.innerHTML = " " + this.co;
+    small.appendChild(carbonDioxide);
+
+    wrapper.appendChild(small);
+
+  }
   /**
    * Handle notifications received by the node helper.
    * So we can communicate between the node helper and the module.
@@ -117,6 +130,10 @@ Module.register("MMM-AirPollution", {
       wrapper.innerHTML = this.translate("LOADING");
       wrapper.className = "dimmed light small"
       return wrapper
+    }
+
+    if(this.config.onlyTemp === false) {
+      this.addPollutionData(wrapper);
     }
 
     var large = document.createElement("div");
