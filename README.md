@@ -43,13 +43,13 @@ Or you could use all the options:
 ```js
    {
         module: "MMM-Air-Pollution",
-        position: "top_right:,
+        position: "top_right",
         config: {
         lat: [latitute],
         lon: [longitude],
         apiKey: "[your openweathermap.org API key]"
-                }
-                },
+    }
+    },
 ```
 
 ## Configuration options

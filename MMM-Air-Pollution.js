@@ -16,7 +16,7 @@ Module.register("MMM-AirPollution", {
   requiresVersion: "2.2.0",
 
   defaults: {
-      apiBase: "http://api.openweathermap.org/data/"
+      apiBase: "http://api.openweathermap.org/data/",
       apiVersion: "2.5",
       endPoint: "/air-pollution",
 
