@@ -1,8 +1,8 @@
 /*
 
 Magic Mirror Modules
-MMM-Air-Pollution
-https://github.com/bluerhodfa/MMM-Air-Pollution
+MMM-AirPollution
+https://github.com/bluerhodfa/MMM-AirPollution
 
 Weather data provided by OpenWeatherMap API
 
@@ -61,7 +61,7 @@ Module.register("MMM-AirPollution", {
    * Apply the default styles.
    */
   getStyles() {
-    return ["MMM-Air-Pollution.css"]
+    return ["MMM-AirPollution.css"]
   },
 
   /**
@@ -149,7 +149,7 @@ Module.register("MMM-AirPollution", {
 
   updateWeather: function() {
         if (this.config.apiKey === "") {
-          Log.error.error("MMM-Air-Pollution: apiKey not set!");
+          Log.error.error("MMM-AirPollution: apiKey not set!");
           return;
         }
 

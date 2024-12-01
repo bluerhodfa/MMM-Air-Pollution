@@ -1,11 +1,11 @@
-# MMM-Air-Pollution
+# MMM-AirPollution
 Use this template for creating new MagicMirror² modules.
 
 See the [wiki page](https://github.com/Dennis-Rosenbaum/MMM-Template/wiki) for an in depth overview of how to get started.
 
-# MMM-Air-Pollution
+# MMM-AirPollution
 
-![Example of MMM-Air-Pollution](./example_1.png)
+![Example of MMM-AirPollution](./example_1.png)
 
 [Module description]
 
@@ -13,17 +13,17 @@ See the [wiki page](https://github.com/Dennis-Rosenbaum/MMM-Template/wiki) for a
 
 ### Install
 
-In your terminal, go to your [MagicMirror²][mm] Module folder and clone MMM-Air-Pollution:
+In your terminal, go to your [MagicMirror²][mm] Module folder and clone MMM-AirPollution:
 
 ```bash
 cd ~/MagicMirror/modules
-git clone https://github.com/bluerhodfa/MMM-Air-Pollution.git
+git clone https://github.com/bluerhodfa/MMM-AirPollution.git
 ```
 
 ### Update
 
 ```bash
-cd ~/MagicMirror/modules/MMM-Air-Pollution
+cd ~/MagicMirror/modules/MMM-AirPollution
 git pull
 ```
 
@@ -33,7 +33,7 @@ To use this module, add it to the modules array in the `config/config.js` file:
 
 ```js
     {
-        module: 'MMM-Air-Pollution',
+        module: 'MMM-AirPollution',
         position: 'top_right'
     },
 ```
@@ -42,7 +42,7 @@ Or you could use all the options:
 
 ```js
    {
-        module: "MMM-Air-Pollution",
+        module: "MMM-AirPollution",
         position: "top_right",
         config: {
         lat: [latitute],

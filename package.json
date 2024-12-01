@@ -1,8 +1,8 @@
 {
-  "name": "MMM-Air-Pollution",
+  "name": "MMM-AirPollution",
   "version": "1.0.0",
   "description": "MagicMirror module to return air polltion data by location from openweathermap.org",
-  "main": "MMM-Air-Pollution.js",
+  "main": "MMM-AirPollution.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluerhodfa/MMM-Air-Pollution.git"
+    "url": "git+https://github.com/bluerhodfa/MMM-AirPollution.git"
   },
   "keywords": [
     "template"
   ],
-  "author": "[Ira Theobold]",
+  "author": "Ira Theobold",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bluerhodfa/MMM-Air-Pollution/issues"
+    "url": "https://github.com/bluerhodfa/MMM-AirPollution/issues"
   },
-  "homepage": "https://github.com/bluerhodfa/MMM-Air-Pollution/#readme",
+  "homepage": "https://github.com/bluerhodfa/MMM-AirPollution/#readme",
   "devDependencies": {
     "@eslint/js": "^9.10.0",
     "@stylistic/eslint-plugin": "^2.7.2",
