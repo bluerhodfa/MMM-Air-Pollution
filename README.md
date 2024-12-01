@@ -41,13 +41,15 @@ To use this module, add it to the modules array in the `config/config.js` file:
 Or you could use all the options:
 
 ```js
-    {
-        module: 'MMM-Air-Pollution',
-        position: 'lower_third',
+   {
+        module: "MMM-Air-Pollution",
+        position: "top_right:,
         config: {
-            exampleContent: 'Welcome world'
-        }
-    },
+        lat: [latitute],
+        lon: [longitude],
+        apiKey: "[your openweathermap.org API key]"
+                }
+                },
 ```
 
 ## Configuration options
