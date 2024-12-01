@@ -97,7 +97,7 @@ Module.register("MMM-AirPollution", {
 
     wrapper.appendChild(small);
 
-  }
+  },
   /**
    * Handle notifications received by the node helper.
    * So we can communicate between the node helper and the module.
