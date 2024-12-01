@@ -37,7 +37,7 @@ Module.register("MMM-AirPollution", {
       updateInterval: 10, // minutes
 
       appendLocationNameToHeader: true,
-		  useLocationAsHeader: false,
+		  useLocationAsHeader: true,
 
 		  calendarClass: "calendar",
 		  tableClass: "large",
