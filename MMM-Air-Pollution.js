@@ -18,8 +18,8 @@ Module.register("MMM-AirPollution", {
   defaults: {
       apiBase: "http://api.openweathermap.org/data/",
       apiVersion: "2.5",
-      endPoint: "/air-pollution",
-
+      endPoint: "air-pollution",
+      location: false,
       units: config.units,
       timeFormat: config.timeFormat,
       lang: config.language,
@@ -28,7 +28,7 @@ Module.register("MMM-AirPollution", {
       initialLoadDelay: 0, // 0 seconds delay
 		  retryDelay: 2500,
 
-      apikey: "",         // Your unique API key (you can always find it on your account page under the "API key" tab)
+      apiKey: "",         // Your unique API key (you can always find it on your account page under the "API key" tab)
       type: "",           // default = "" (options: /forecast, /history)
       lat: "",            // Latitude. If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use OpenWeatherMap Geocoding API
       lon: "",            // Longitude. If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use OpenWeatherMap  Geocoding API
@@ -104,12 +104,12 @@ Module.register("MMM-AirPollution", {
   /**
    * Render the page we're on.
    */
-  getDom() {
+  getDom: function() {
     var wrapper = document.createElement("div")
     wrapper.className = this.config.tableClass;
-    wrapper.innerHTML = `<b>Title</b><br />${this.templateContent}`
+    wrapper.innerHTML = `<b>Air Pollution</b><br />${this.templateContent}`
 
-    if (this.config.apikey === "") {
+    if (this.config.apiKey === "") {
       wrapper.innerHTML = "OpeneWeatherMap API key is required, please set your <i>apiKey</> in the config for module: " + this.name + ".";
       wrapper.className = "dimmed light small";
       return wrapper
@@ -140,7 +140,7 @@ Module.register("MMM-AirPollution", {
 			else return this.fetchedLocationName;
 		}
 
-		return this.data.header ? this.data.header : "";
+		return this.data.header ? this.data.header : "HEADER";
 	},  
 
   // updateWeather()
@@ -148,7 +148,7 @@ Module.register("MMM-AirPollution", {
   // calls processAQI on successfull response
 
   updateWeather: function() {
-        if (this.config.apikey === "") {
+        if (this.config.apiKey === "") {
           Log.error.error("MMM-Air-Pollution: apiKey not set!");
           return;
         }
