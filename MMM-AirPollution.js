@@ -106,7 +106,7 @@ Module.register("MMM-AirPollution", {
    * @param {any} payload - The payload data`returned by the node helper.
    */
   socketNotificationReceived: function (notification, payload) {
-    if (notification === "EXAMPLE_NOTIFICATION") {
+    if (notification === "Air Pullution Update") {
       this.templateContent = `${this.config.exampleContent} ${payload.text}`
       this.updateDom()
     }
@@ -196,6 +196,7 @@ Module.register("MMM-AirPollution", {
 
         };
         Log.info(self.name + ": URL " + this.url); 
+        console.log("Update URL:" + this.url)
         aqiRequest.send(); 
   },
 
