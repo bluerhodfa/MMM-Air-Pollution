@@ -18,7 +18,7 @@ Module.register("MMM-AirPollution", {
   defaults: {
       apiBase: "http://api.openweathermap.org/data/",
       apiVersion: "2.5",
-      endPoint: "air-pollution",
+      endPoint: "air_pollution",
       location: "Oban",
       units: config.units,
       timeFormat: config.timeFormat,
